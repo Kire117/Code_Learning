@@ -1,0 +1,112 @@
+1.4.5 How to use pip
+Now we’re ready to ask pip what it can do for us. Let's do it – issue the following command:
+
+
+pip help
+
+
+For example, the line:
+
+pip help install
+will show you detailed information about using and parameterizing the install command.
+
+The pip list isn't very informative, and it may happen that it won't satisfy your curiosity. Fortunately,
+there’s a command that can tell you more about any of the installed packages (note the word installed).
+The syntax of the command looks as follows:
+
+
+pip show package_name
+
+We’re going to use it in a slightly deceptive way – we want to convince pip to confess something about itself.
+This is how we do it:
+
+pip show pip
+
+It looks a bit odd, doesn't it? Despite this, it works fine, and pip's self-presentation looks consistent and current:
+
+You may ask where this data comes from? Is pip really so perceptive? Not at all – the information appearing on the screen is taken from inside the package being shown. In other words, the package's creator is obliged to equip it with all the needed data (or to express it more precisely – metadata).
+
+Look at the two lines at the bottom of the output. They show:
+
+which packages are needed to successfully utilize the package (Requires:)
+which packages need the package to be successfully utilized (Required-by:)
+As you can see, both properties are empty. Feel free to try to use the show command in relation to any other
+installed package.
+
+The power of pip comes from the fact that it’s actually a gateway to the Python software universe. Thanks to that,
+you can browse and install any of the hundreds of ready-to-use packages gathered in the PyPI repositories.
+Don't forget that pip is not able to store all PyPI content locally (it’s unnecessary and it would be uneconomical).
+
+In effect, pip uses the Internet to query PyPI and to download the required data. This means that you have
+to have a network connection working whenever you’re going to ask pip for anything that may involve direct
+interactions with the PyPI infrastructure.
+
+One of these cases occurs when you want to search through PyPI in order to find a desired package.
+This kind of search is initiated by the following command:
+
+
+pip search anystring
+
+The anystring you provide will be searched in:
+
+the names of all the packages;
+the summary strings of all the packages.
+Be aware of the fact that some searches may generate a real avalanche of data, so try to be as specific as possible.
+For example, an innocent-looking query like this one:
+
+
+pip search pip
+
+produces more than 100 lines of results (try it yourself – don't take our word for it). By the way –
+the search is case insensitive.
+
+If you’re not a fan of console reading, you can use the alternative way of browsing PyPI content offered by a search
+engine, available at https://pypi.org/search.
+
+Assuming that your search is successful (or you’re determined to install a specific package of an already known name)
+you can use pip to install the package onto your computer.
+
+Two possible scenarios may be put into action now:
+
+you want to install a new package for you only – it won't be available for any other user (account) existing
+on your computer; this procedure is the only one available if you can’t elevate your permissions
+and act as a system administrator;
+you’ve decided to install a new package system-wide – you have administrative rights and you're not afraid to use them.
+To distinguish between these two actions, pip uses a dedicated option named --user (note the double dash).
+The presence of this option instructs pip to act locally on behalf of your (non-administrative) user.
+
+If you don’t add this, pip assumes that you’re a system administrator and it’ll do nothing to correct you if you’re not.
+
+In our case, we’re going to install a package named pygame – it's an extended and complex library allowing
+programmers to develop computer games using Python.
+
+The project has been in development since the year 2000, so it's a mature and reliable piece of code.
+If you want to know more about the project and about the community which leads it, visit https://www.pygame.org.
+
+If you’re a system administrator, you can install pygame using the following command:
+
+
+pip install pygame
+
+If you're not an admin, or you don't want to fatten up your OS by installing pygame system-wide,
+you can install it for you only:
+
+
+pip install --user pygame
+
+It's up to you which of the above procedures you want to take place.
+
+Pip has a habit of displaying fancy textual animation indicating the installation progress,
+so watch the screen carefully – don't miss the show! If the process is successful, you’ll see something like this:
+
+We encourage you to use:
+
+
+pip show pygame
+
+and
+
+
+pip list
+
+to get more information about what actually happened.

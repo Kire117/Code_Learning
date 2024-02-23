@@ -1,0 +1,32 @@
+1.4.8 SECTION SUMMARY
+1. A repository (or repo for short) designed to collect and share free Python code exists and works under the
+ame Python Package Index (PyPI) although it's also likely that you come across the very niche name The Cheese Shop.
+The Shop's website is available at https://pypi.org/.
+
+
+2. To make use of The Cheese Shop, a specialized tool has been created and its name is pip (pip installs packages
+while pip stands for... ok, never mind). As pip may not be deployed as a part of the standard Python installation,
+it is possible that you will need to install it manually. Pip is a console tool.
+
+
+3. To check pip's version one the following commands should be issued:
+
+pip --version
+
+or
+
+pip3 --version
+
+Check yourself which of these works for you in your OS's environment.
+
+
+4. The list of the main pip activities looks as follows:
+
+pip help operation – shows a brief description of pip;
+pip list – shows a list of the currently installed packages;
+pip show package_name – shows package_name info including the package's dependencies;
+pip search anystring – searches through PyPI directories in order to find packages whose names contain anystring;
+pip install name – installs name system-wide (expect problems when you don't have administrative rights);
+pip install --user name – installs name for you only; no other platform user will be able to use it;
+pip install -U name – updates a previously installed package;
+pip uninstall name – uninstalls a previously installed package.

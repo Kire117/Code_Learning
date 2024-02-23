@@ -1,0 +1,32 @@
+1.4.4 Dependencies
+
+Now that we’re sure that pip is ready at our command, we’re going to limit our focus to MS Windows only,
+as its behavior is (should be) the same in all OSs, but before we start, we need to explain an important
+issue and tell you about dependencies.
+
+Imagine that you've created a brilliant Python application named redsuspenders,
+able to predict stock exchange rates with 99% accuracy (by the way, if you actually do that,
+please contact us immediately).
+
+Of course, you've used some existing code to achieve this goal – e.g., your app imports a package named nyse
+containing some crucial functions and classes. Moreover, the nyse package imports another package named wallstreet,
+while the wallstreet package imports other two essential packages named bull and bear.
+
+As you’ve probably already guessed, the connections between these packages are crucial, and if somebody decides to use
+your code (but remember, we've already called dibs on it) they will also have to ensure that all required packages are
+in place.
+
+To make a long story short, we can say that dependency is a phenomenon that appears every time you're going to
+use a piece of software that relies on other software. Note that dependency may include (and generally does include)
+more than one level of software development.
+
+Does this mean that a potential nyse package user is obliged to trace all dependencies and manually install all
+the needed packages? That would be horrible, wouldn't it?
+
+Yes, it's definitely horrible, so you shouldn't be surprised that the process of arduously fulfilling all
+the subsequent requirements has its own name, and it's called dependency hell.
+
+How do we deal with that? Is every user doomed to visit hell in order to run the code for the first time?
+
+Fortunately not – pip can do all of this for you. It can discover, identify, and resolve all dependencies.
+Moreover, it can do it in the cleverest way, avoiding any unnecessary downloads and reinstalls.

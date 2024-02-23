@@ -1,0 +1,26 @@
+1.4.3 How to install pip
+The question that should be put now is: how to get a proper cheese knife? In other words, how to ensure
+that pip is installed and ready to work?
+
+The most precise answer is “it depends”. Really.
+
+Some Python installations come with pip, some don't. What’s more, it doesn’t only depend on the OS you use,
+although this is a very important factor.
+
+Let's start with MS Windows.
+pip on MS Windows
+The MS Windows Python installer already contains pip, and so no other steps need to be taken in order to install it.
+Unfortunately, if the PATH variable is misconfigured, pip may unavailable.
+
+To verify that we haven’t misled you, try to do this:
+
+open the Windows console (CMD or PowerShell, whatever you prefer)
+execute the following command:
+pip --version
+
+in the most optimistic scenario (and we really want that to happen) you’ll see something like this:
+the absence of this message may mean that the PATH variable either incorrectly points to the location of the
+Python binaries, or doesn't point to it at all; for example, our PATH variable contains the following substring:
+C:\Program Files\Python3\Scripts\;C:\Program Files\Python3\;
+
+the easiest way to reconfigure the PATH variable is to reinstall Python, instructing the installer to set it for you.

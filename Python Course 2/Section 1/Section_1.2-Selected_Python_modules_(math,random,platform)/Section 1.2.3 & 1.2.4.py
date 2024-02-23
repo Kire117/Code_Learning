@@ -13,6 +13,7 @@
 # as their values are determined by the current (rather unpredictable) seed value, you can't guess them:
 
 from random import random
+
 print("Random function")
 for i in range(5):
     print(random())
@@ -25,6 +26,7 @@ for i in range(5):
 # We've modified the previous program - in effect, we've removed any trace of randomness from the code:
 
 from random import random, seed
+
 print("\nSeed function")
 seed(0)
 
@@ -60,14 +62,12 @@ print("\nSecond:", randrange(0, 1), end=' ')
 print("\nThird:", randrange(0, 1, 1), end=' ')
 print("\nFourth:", randint(0, 1))
 
-
 # Another example
 print("\nAnother example")
 from random import randint
 
 for i in range(10):
     print(randint(1, 10), end=',')
-
 
 # The choice and sample functions
 

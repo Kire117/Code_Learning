@@ -1,0 +1,17 @@
+1.4.9 SECTION QUIZ
+
+Question 1: Where does the name "The Cheese Shop" come from?
+
+It's a reference to an old Monty Python's sketch of the same name.
+
+Question 2: Why should I ensure which one of pip and pip3 works for me?
+
+When Python 2 and Python 3 coexist in your OS, it's likely that pip identifies the instance of pip working with Python 2 packages only.
+
+Question 3: How can I determine if my pip works with either Python 2 or Python 3?
+
+pip --version will tell you that.
+
+Question 4: Unfortunately, I don't have administrative right. What should I do to install a package system-wide?
+
+You have to ask your sysadmin - don't try to hack your OS!
