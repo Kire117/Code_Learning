@@ -117,3 +117,48 @@ puntos_nuevos = 350
 puntos_totales = puntos_nuevos + puntos_anteriores
 print(f"Has ganado {puntos_nuevos} puntos! En total, acumulas {puntos_totales} puntos")
 
+z = 7
+y = 2
+print(f"{z} dividido al piso de {y} es igual a {z//y}")
+print(f"{z} modulo de  {y} es igual {z%y}")
+print(f"{z} elevado a la {y} es igual a {z**y}")
+print(f"La raiz cuadrad de {z} es {z**0.5}") # RAIZ CUADRADA FORMULA
+
+# Práctica Operadores Matemáticos 1
+# Muestra en pantalla el cociente (división al piso) de los siguientes dos números: 874 dividido entre 27.
+a = 874
+b = 27
+print(f"{874//27}")
+
+# Práctica Operadores Matemáticos 2
+# Muestra en pantalla el módulo (es decir, el resto) de la división entre 456 y 33.
+# Debes mostrar solo el valor numérico que resulta de esta operación.
+
+a = 456
+b = 33
+print(f"{a%b}")
+
+# Práctica Operadores Matemáticos 3
+# Calcula y muestra en pantalla la raíz cuadrada de 783.
+# Debes mostrar solo el valor numérico que resulta de esta operación.
+c = 783
+print(f"{c**0.5}")
+
+# Práctica Redondeo 1
+# Redondea el resultado de la división 10/3 a un número con 2 decimales, y muestra en pantalla el valor redondeado.
+resultado = 10/3
+print(round(resultado, 2))
+
+# Práctica Redondeo 2
+# Redondea el número 10.676767 al entero más próximo, y muestra en pantalla el resultado.
+valor = 10.676767
+print(round(valor))
+
+# Práctica Redondeo 3
+# Calcula la raíz cuadrada de 5, y muestra en pantalla el resultado redondeado con 4 posiciones decimales.
+num = round(5**0.5, 4)
+print(num)
+
+
+
+
