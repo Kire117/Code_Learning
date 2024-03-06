@@ -133,10 +133,42 @@ print(mi_tupla.count(2))
 # Convierte a lista la siguiente tupla, y almacénala en una variable llamada mi_lista.
 
 mi_tupla = (1, 2, 3, 2, 3, 1, 3, 2)
-mi_lista = list(mi_tupla)
+mi_lista1= list(mi_tupla)
 
 # Práctica Tuples 3
 # Extrae los elementos de la siguiente tupla en cuatro variables: a, b, c, d
 mi_tupla = (1, 2, 3, 4)
 
 a,b,c,d = mi_tupla
+
+# Práctica Sets 1
+# Une los siguientes sets en uno solo, llamado mi_set_3:
+mi_set_1 = {1, 2, "tres", "cuatro"}
+mi_set_2 = {"tres", 4, 5}
+mi_set_3 = mi_set_1.union(mi_set_2)
+
+# Práctica Sets 2
+# Elimina un elemento al azar del siguiente set, utilizando métodos de sets.
+sorteo = {"Camila", "Margarita", "Axel", "Jorge", "Miguel", "Mónica"}
+sorteo.pop()
+
+# Práctica Sets 3
+# Agrega el nombre Damián al siguiente set, utilizando métodos de sets:
+sorteo = {"Camila", "Margarita", "Axel", "Jorge", "Miguel", "Mónica"}
+sorteo.add("Damián")
+
+# Práctica Booleanos 1 Realiza una comparación que arroje como resultado un booleano y almacena el resultado (
+# True/False) en una variable llamada prueba
+prueba = 5 == 2+3
+
+# Práctica Booleanos 2
+# Verifica si 17834/34 es mayor que 87*56 y muestra el resultado (booleano) en pantalla utilizando print()
+resultado = 17834/34 > 87*56
+print(resultado)
+
+# Práctica Booleanos 3
+# Verifica si la raíz cuadrada de 25 es igual a 5 y muestra el resultado (booleano) en pantalla utilizando print()
+resultado = 25**0.5 == 5
+print(resultado)
+
+
