@@ -253,8 +253,48 @@ diccionario_edades = {"Carlos":55, "María":42, "Mabel":78, "José":44, "Lucas":
 edad_minima = min(diccionario_edades.values())
 ultimo_nombre = max(diccionario_edades)
 
+# Práctica Random 1 Implementa la función randint() de la librería random que te permita obtener un número entero del
+# 1 al 10, y almacena dicho valor en una variable llamada aleatorio
+from random import *
+aleatorio = randint(1,11)
 
+# Práctica Random 2 Implementa la función random() de la librería random que te permita obtener un número decimal
+# entre 0 y 1, y almacena dicho valor en una variable llamada aleatorio
 
+# from random import *
+aleatorio = random()
 
+# Práctica Random 3 Utiliza el método choice() de la librería random para obtener un elemento al azar de la lista de
+# nombres a continuación, y almacena el nombre escogido en una variable llamada sorteo.
 
+# from random import *
+nombres = ["Carlos", "Julia", "Nicole", "Laura", "Mailen"]
+sorteo = choice(nombres)
 
+# Práctica Comprensión de Listas 1 Para realizar el ejercicio a continuación, puedes optar por diferentes caminos. Si
+# bien en programación el camino correcto es el que devuelve el resultado correcto, te animo a que intentes aplicar
+# los conceptos de comprensión de listas para comenzar a afianzarlos para el futuro. ¡Pueden resultarte muy útiles en
+# tu práctica profesional! Crea una lista valores_cuadrado formada por los números de la lista valores, elevados al
+# cuadrado
+valores = [1, 2, 3, 4, 5, 6, 9.5]
+valores_cuadrado = [v ** 2 for v in valores]
+
+# Práctica Comprensión de Listas 2 Para realizar el ejercicio a continuación, puedes optar por diferentes caminos. Si
+# bien en programación el camino correcto es el que devuelve el resultado correcto, te animo a que intentes aplicar
+# los conceptos de comprensión de listas para comenzar a afianzarlos para el futuro. ¡Pueden resultarte muy útiles en
+# tu práctica profesional!
+# Crea una lista valores_pares formada por los números de la lista valores que (¡adivinaste!) sean pares.
+valores = [1, 2, 3, 4, 5, 6, 9.5]
+valores_pares = [v for v in valores if v % 2 == 0]
+
+# Práctica Comprensión de Listas 3 Para realizar el ejercicio a continuación, puedes optar por diferentes caminos. Si
+# bien en programación el camino correcto es el que devuelve el resultado correcto, te animo a que intentes aplicar
+# los conceptos de comprensión de listas para comenzar a afianzarlos para el futuro. ¡Pueden resultarte muy útiles en
+# tu práctica profesional!
+#
+# Para la siguiente lista de temperaturas en grados Fahrenheit, expresa estos mismos valores en una nueva lista de
+# valores de temperatura en grados Celsius. La conversión entre tipo de unidades es la siguiente: °C = (°F - 32) * (
+# 5/9) o expresado de otro modo: (grados_fahrenheit-32)*(5/9) La lista de temperaturas es la siguiente:
+# temperatura_fahrenheit = [32, 212, 275] Almacena esta nueva lista en una variable llamada grados_celsius
+temperatura_fahrenheit = [32, 212, 275]
+grados_celsius = [(f -32) * (5/9) for f in temperatura_fahrenheit]
