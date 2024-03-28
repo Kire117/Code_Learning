@@ -32,7 +32,7 @@ class Cliente(Persona):
         print(f"Tu saldo es {self.balance}")
         retiro = float(input("Cuanto deseas retirar?: "))
         if retiro > self.balance:
-            print("No puedes retirar esa cantidad, ya que no cuentas con ello")
+            print("Fondos Insuficientes")
         else:
             nuevo_balance = self.balance - retiro
             self.balance = nuevo_balance
