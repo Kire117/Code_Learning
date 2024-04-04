@@ -1,0 +1,28 @@
+def mayuscula(texto):
+    print(texto.upper())
+
+def minuscula(texto):
+    print(texto.lower())
+
+mi_funcion = mayuscula
+
+mi_funcion("python")
+
+
+''' otra forma de crear funciones, es agregar funciones dentro de una funcion como a continuacion'''
+def cambiar_letras(tipo):
+
+    def mayuscula(texto):
+        print(texto.upper())
+
+    def minuscula(texto):
+        print(texto.lower())
+
+    if tipo == 'may':
+        return mayuscula
+    elif tipo == 'min':
+        return minuscula
+
+operacion = cambiar_letras('may')
+operacion('hola, como estas')
+operacion('Que Pedo Banda')

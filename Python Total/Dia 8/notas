@@ -1,0 +1,9 @@
+las funciones generadoras lo que hacen es cuidar el espacio de memoria de mi ordenador
+
+para crear un generador se siguen los mismos pasos al crear un funcion en python, la unica diferencia es
+que en vez de pedir un return en la funcion se reemplaza la palabra "return" por yield que quiere decir
+producir, para que vaya produciendo el codigo a medida que lo vayamos necesitando
+ejemplo de un generador:
+
+def mi_generador():
+    yield 4

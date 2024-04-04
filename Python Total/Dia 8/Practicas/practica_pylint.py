@@ -1,5 +1,13 @@
-def Sumar(número1, número2):
-    return número1+número2
+"""
+Este modulo es una practica sobre como usar pylint
+"""
 
-suma = Sumar(5,7)
-print(suma)
+def sumar(num1, num2):
+    """
+    Esta funcion recibe 2 argumentos para retornar como suma dichos valores
+    """
+    resultado = num1 + num2
+    return resultado
+
+suma = sumar(5, 7)
+print(f"La suma de tus numeros es {suma}")
