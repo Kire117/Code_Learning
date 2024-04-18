@@ -1,0 +1,65 @@
+La ciencia de datos o data Science es un campo especial de la ciencia que aplica métodos científicos,
+
+procesos y sistemas para poder extraer conocimiento o un mejor entendimiento de los datos en sus diferentes
+
+formas.
+
+Es una ciencia muy amplia, por lo que en esta sección no pretendemos enseñar ciencia de datos, sino
+
+cómo aplicar Poisson a la ciencia de datos.
+
+Para eso nos vamos a dedicar el día de hoy a conocer tres bibliotecas de Python que son un estándar
+
+mundial en el análisis y visualización de datos y estas son num, pi, pandas y Math cloud.
+
+Lean En un país que proviene de numeric, el Python es el módulo por defecto para hacer operaciones
+
+numéricas de manera eficiente, incluso con cantidades monstruosas de datos y en muy poco tiempo.
+
+Pandas es una librería utilizada para manipular y analizar datos en Python que está montada sobre un
+
+pi, por lo cual muchas funcionalidades son similares.
+
+Utilizamos pandas para poder trabajar con conjuntos de datos a los que llamamos dataset y que están
+
+estructurados en filas y columnas.
+
+Y es por eso que Pandas se lo conoce como el Excel de Python.
+
+Y vamos a complementar everything esto con Matt Lib, la librería preferida para crear gráficos en Python.
+
+La visualización de datos a través de gráficos en ciencia de datos es una parte muy importante.
+
+Cumple el rol de comunicar visualmente información que puede provenir de tablas de millones y millones
+
+de filas, a la vez que nos permite comprender mejor nuestros datos de formas que no podríamos hacerlo
+
+leyendo una tabla.
+
+Cuando terminemos de conocer estas herramientas viene la frutilla del postre.
+
+Vamos a aplicar lo aprendido para construir un modelo de datos conocido como machine learning.
+
+Esto significa máquina aprendiendo o aprendizaje de la máquina y se refiere a una rama de la inteligencia
+
+artificial que consiste en entrenar a nuestra computadora para que en base a su experiencia con los
+
+datos provistos, sea capaz de predecir el resultado de nuevos casos.
+
+El proyecto en particular que vamos a crear el día de hoy consiste en un módulo que va a revisar la
+
+base de datos de pasajeros del famoso Titanic y en base al análisis de quiénes sobrevivieron y quiénes
+
+no, va a poder identificar qué características son las más favorables o desfavorables para sobrevivir
+
+a su hundimiento.
+
+E incluso también podrá predecir si le presentaremos nuevos pasajeros si estos van a sobrevivir o no.
+
+Ciencia ficción, verdad?
+
+Nada de eso.
+
+Ciencia en acción.
+
+Y la vas a poner en acción tu mismo a partir del siguiente video.

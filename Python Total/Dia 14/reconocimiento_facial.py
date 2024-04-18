@@ -32,6 +32,25 @@ cv2.rectangle(foto_prueba,
               (0, 255, 0),
               2)
 
+# realizar comparacion
+resultado = fr.compare_faces([cara_codificada_A] , cara_codificada_B) # donde la tolerancia si es mayor a 0.6
+# dira que no hay parecido pero si es menor a 0.6 dira que si hay parecido, ahora lo que se puede hacer, es modificar esa tolencia para
+# hacerlo mas flexible a la hora de comparar entre caras o hacerlo mas estricto donde valores menores seran True y mayores False
+
+# print(resultado) al imprimir el resultado en pantalla lo que hara es ver si ambas caras concinden y dependiendo del resultado devolver True = si es cierto o
+# False = si no es cierto
+
+# medida de la distancia
+distancia = fr.face_distance([cara_codificada_A], cara_codificada_B)
+
+# mostrat resultado
+cv2.putText(foto_prueba, f'{resultado} {distancia.round(2)}',
+            (50, 50),
+            cv2.FONT_HERSHEY_COMPLEX,
+            1,
+            (0, 255, 0),
+            2)
+
 # mostrar imagenes
 cv2.imshow('Foto Control', foto_control)
 cv2.imshow('Foto Prueba', foto_prueba)
