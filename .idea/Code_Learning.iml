@@ -6,8 +6,12 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/Python Total/Mis_entornos/Proyecto1/p1" />
+      <excludeFolder url="file://$MODULE_DIR$/Python Total/Mis_entornos/Proyecto2/p2" />
+      <excludeFolder url="file://$MODULE_DIR$/Python Total/Mis_entornos/mi_web/web" />
+      <excludeFolder url="file://$MODULE_DIR$/Python_Total/Mis_entornos/mi_web/web" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (Code_Learning)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Code_Learning) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

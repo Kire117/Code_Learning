@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Lista de tarea pendientes</h1>
+    <a href="{% url 'create-task' %}">Create New Task</a>
+    <table>
+        <tr>
+            <th>Elementos</th>
+            <th></th>
+            <th></th>
+            <th></th>
+
+        </tr>
+        {% for task in tasks%}
+        <tr>
+            <td>{{task.title}}</td>
+            <td><a href="{% url 'task' task.id %}">See</a></td>
+            <td> <a href="{% url 'edit-task'  task.id %}">Edit</a></td>
+            <td><a href="{% url 'delete-task' task.id %}">Delete</a></td>
+        </tr>
+
+
+         {% empty %}
+        <h3> No hay elementos en esta lista</h3>
+
+        {% endfor%}
+
+
+    </table>
+</body>
+</html>
