@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Log in</title>
 </head>
 <body>
     {% extends 'base/index.html' %}
     {% block content %}
     <div class="superior-bar">
-        <a href="{% url 'tasks' %}">&larrhk; Back</a>
+        <h1>Log In</h1>
     </div>
-
     <div class="card-body">
-        <h1>Task Form: </h1>
-
-    <form method="post" action="">
+        <form method="post">
         {% csrf_token %}
-
         {{form.as_p}}
-        <input class="button" type="submit" value="Send">
+        <input class="button" type="submit" value="Log in">
     </form>
+    <p>Don't have an account? <a href="{% url 'sign-in' %}">Sign In</a></p>
     </div>
-
     {% endblock content%}
 </body>
 </html>
